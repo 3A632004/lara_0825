@@ -60,6 +60,4 @@
             </div>
         </div>
     </article>
-
-    <hr>
 @endsection
