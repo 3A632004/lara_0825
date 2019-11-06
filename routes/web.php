@@ -17,10 +17,14 @@ Route::get('/', function () {
 //        'content'=>'test content',
 //    ]);
 
-    $post=new\App\Post();
-    $post->title='testtitle';
-    $post->content='testcontent';
-    $post->save();
+//    $post=new\App\Post();
+//    $post->title='testtitle';
+//    $post->content='testcontent';
+//    $post->save();
+
+    $posts=\App\Post::all();
+    dd($posts);
+
 //    return view('welcome');
 });
 Route::get('posts', ['as' => 'posts.index', 'uses' =>
